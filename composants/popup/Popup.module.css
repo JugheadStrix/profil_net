@@ -1,0 +1,49 @@
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.container>i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.container>div {
+    animation: anim 2s;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    max-width: 25rem;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(5rem);
+    }
+}
+
+.container>div>div:first-child {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
+
+.container>div>div:last-child {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}

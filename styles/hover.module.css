@@ -1,0 +1,19 @@
+.container {
+    position: absolute;
+    bottom: 30%;
+    right: -120%;
+    background: linear-gradient(-15deg, transparent, rgba(0, 0, 0, 0.322), transparent);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    animation: anim .75s forwards;
+    opacity: 0;
+
+}
+
+@keyframes anim {
+    100% {
+        opacity: 1;
+    }
+}
+
+.container div {}

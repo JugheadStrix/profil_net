@@ -1,0 +1,38 @@
+.image {
+    object-fit: contain;
+    height: 22rem;
+    width: 22rem;
+    animation: cool 4s ease infinite;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.705);
+    transition: all 0.3s;
+    /* box-shadow: 7px 7px 15px #45566754, -8px -8px 15px #5165790a,
+        inset -5px -4px 13px 0px #51657959, inset 6px 7px 12px 0px #fffffff0; */
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+@keyframes cool {
+    0% {
+        border-radius: 10rem 12rem 8rem 10rem;
+        background-color: palegreen;
+    }
+
+    30% {
+        border-radius: 12rem 10rem 14rem 7rem;
+        background-color: paleturquoise;
+    }
+
+    60% {
+        border-radius: 16rem 10rem 14rem 12rem;
+        background-color: palegoldenrod;
+    }
+
+    100% {
+        border-radius: 10rem 12rem 8rem 10rem;
+        background-color: palegreen;
+    }
+}
