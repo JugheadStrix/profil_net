@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+    background: var(--primary-color);
+    height: max-content;
+    border-radius: .4rem;
+    padding: .5rem 1rem;
+}
+
+.container div label {
+    color: #fff;
+}
